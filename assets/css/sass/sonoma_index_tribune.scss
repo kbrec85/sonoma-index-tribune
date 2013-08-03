@@ -1,0 +1,128 @@
+/**
+ * Sonoma Index Tribune
+ * http://www.sonomanews.com
+ *
+ * Copyright (c) 2013 Kyle Breckenridge
+ * Licensed under the GPLv2+ license.
+ */
+@import "compass";
+@import "partials/variables";
+
+* {
+	@include box-sizing(border-box);
+}
+
+
+@import "partials/normalize";
+@import "partials/typography";
+
+.wrapper {
+	width: 1020px;
+	margin: 0 auto;
+	position: relative;
+	text-align: left;
+}
+header[role="banner"] {
+	margin-bottom: 15px;
+	.ad {
+		@include inline-block;
+		vertical-align: top;
+		margin-left: 15px;
+	}
+	.top-nav {
+		@include inline-block;
+		vertical-align: top;
+		border-left: 1px solid white;
+		width: 15%;
+		margin-left: -.25em;
+		a {
+			display: block;
+			color: white;
+			text-transform: uppercase;
+			font-weight: bold;
+			text-align: right;
+			border-bottom: 1px solid white;
+			line-height: 1.72em;
+			font-size: .8em;
+			padding: 0 10px;
+			font-family: 'Roboto', sans-serif;
+			$num: 0;
+			@while $num < 5 {
+				&:nth-child(#{$num}) {
+					$num2: $num * 7;
+					background-color: darken(#ccc, $num2);
+					$num: $num + 1;
+				}
+			}
+		}
+	}
+	.magcover {
+		float: right;
+		position: absolute;
+		top: 0;
+		right: 15px;
+		z-index: 3;
+	}
+	.logo {
+		width: 90%;
+		margin: 15px 5% 0;
+	}
+}
+nav[role="navigation"] {
+	border: {
+		top: 1px solid lighten($text-grey, 50%);
+		bottom: 1px solid lighten($text-grey, 50%);
+	}
+	text-align: justify;
+	&:before{
+	    content: '';
+	    display: block;
+	    width: 100%;
+	    margin-bottom: -1.22em;
+	}
+
+	&:after {
+	    content: '';
+	    display: inline-block;
+	    width: 100%;
+	}
+	a {
+		color: lighten($text-grey, 30%);
+		@include inline-block;
+		line-height: 1.7em;
+		text-transform: uppercase;
+		position: relative;
+		top: 1.2em;
+		padding: 0 5px;
+		margin-left: -.25em;
+		&:hover {
+			background-color: black;
+			color: white;
+		}
+	}
+}
+.col-1 {
+	@include inline-block;
+	vertical-align: top;
+	width: 70.5%;
+	.featured {
+		@include inline-block;
+		vertical-align: top;
+		width: 68%;
+		border-right: 1px solid grey;
+		padding-right: 10px;
+	}
+	.top-news {
+		@include inline-block;
+		vertical-align: top;
+		width: 32%;
+		margin-left: -.25em;
+		padding-left: 10px;
+	}
+}
+.col-2 {
+	@include inline-block;
+	vertical-align: top;
+	width: 29.5%;
+	margin-left: -.25em;
+}

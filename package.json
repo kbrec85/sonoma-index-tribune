@@ -1,0 +1,24 @@
+{
+  "name": "sonoma-index-tribune",
+  "title": "Sonoma Index Tribune",
+  "description": "Wordpress Theme for The Sonoma Index Tribune",
+  "version": "0.1.0",
+  "homepage": "http://www.sonomanews.com",
+  "author": {
+    "name": "Kyle Breckenridge",
+    "email": "kyle.breckenridge@pressdemocrat.com",
+    "url": "http://www.pdmedialab.com"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "matchdep": "~0.1.2",
+    "grunt-contrib-concat": "~0.1.2",
+    "grunt-contrib-uglify": "~0.1.1",
+    "grunt-contrib-cssmin": "~0.6.0",
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt-contrib-watch": "~0.2.0",
+    "grunt-contrib-compass": "~0.4.1"
+  },
+  "keywords": []
+}
