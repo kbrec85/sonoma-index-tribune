@@ -123,7 +123,7 @@ a:hover {
  */
 p,
 pre {
-  margin: 1.5em 0; }
+  margin: 1.2em 0; }
 
 blockquote {
   /* Set 1 unit of vertical rhythm on the top and bottom margin. */
@@ -919,3 +919,69 @@ section[role="slider"] {
 .footer-copyright {
   font-size: .9em;
   text-align: center; }
+
+.top {
+  border-bottom: 1px solid #c1c1c1;
+  padding-bottom: 20px; }
+  .top img {
+    width: 100%;
+    height: auto; }
+  .top p {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto; }
+    .top p:last-child {
+      margin-bottom: 0px; }
+
+.sections > article {
+  padding: .5em 0;
+  border-bottom: 1px solid #c1c1c1; }
+  .sections > article:last-child {
+    border-bottom: 0px; }
+  .sections > article img {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    vertical-align: top;
+    width: 23%;
+    margin-right: 3%; }
+  .sections > article > div {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    vertical-align: top;
+    text-align: left;
+    width: 74%;
+    margin-left: -.25em; }
+  .sections > article h2 {
+    font-size: 1.3em;
+    margin: 0;
+    padding: 0 0 .3em;
+    line-height: 1.2em; }
+  .sections > article p:last-child {
+    margin-bottom: 0; }
+
+.archive-link {
+  text-align: right; }
+
+.caption {
+  background-color: #c1c1c1;
+  margin-bottom: 20px; }
+  .caption p {
+    margin-bottom: 0; }
+
+article time {
+  font-style: italic;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: .8em; }
+article header {
+  margin-bottom: 10px; }
+article h4 {
+  border: 0px; }

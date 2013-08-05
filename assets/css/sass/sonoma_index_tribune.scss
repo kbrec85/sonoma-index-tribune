@@ -18,6 +18,8 @@
 @import "partials/typography";
 @import "partials/forms";
 
+@import "partials/category";
+
 .wrapper {
 	width: 1060px;
 	margin: 0 auto;
@@ -376,4 +378,75 @@ section[role="slider"] {
 .footer-copyright {
 	font-size: .9em;
 	text-align: center;
+}
+
+.top {
+	border-bottom: 1px solid $border-color;
+	padding-bottom: 20px;
+	img {
+		width: 100%;
+		height: auto;
+	}
+	p {
+		width: 75%;
+		margin-left: auto;
+		margin-right: auto;
+		&:last-child {
+			margin-bottom: 0px;
+		}
+	}
+}
+.sections > article {
+	padding: .5em 0;
+	border-bottom: 1px solid $border-color;
+	&:last-child {
+		border-bottom: 0px;
+	}
+	img {
+		@include inline-block;
+		vertical-align: top;
+		width: 23%;
+		margin-right: 3%;
+	}
+	> div {
+		@include inline-block;
+		vertical-align: top;
+		text-align: left;
+		width: 74%;
+		margin-left: -.25em;
+	}
+	h2 {
+		font-size: 1.3em;
+		margin: 0;
+		padding: 0 0 .3em;
+		line-height: 1.2em;
+	}
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+.archive-link {
+	text-align: right;
+}
+.caption {
+	background-color: $border-color;
+	margin-bottom: 20px;
+	p {
+		margin-bottom: 0;
+	}
+}
+
+article {
+	time {
+		font-style: italic;
+		font-weight: bold;
+		font-family: $sans;
+		font-size: .8em;
+	}
+	header {
+		margin-bottom: 10px;
+	}
+	h4 {
+		border: 0px;
+	}
 }
