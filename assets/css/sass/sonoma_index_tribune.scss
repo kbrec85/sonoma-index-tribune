@@ -8,6 +8,7 @@
 @import "compass";
 @import "partials/variables";
 
+
 * {
 	@include box-sizing(border-box);
 }
@@ -15,12 +16,14 @@
 
 @import "partials/normalize";
 @import "partials/typography";
+@import "partials/forms";
 
 .wrapper {
-	width: 1020px;
+	width: 1060px;
 	margin: 0 auto;
 	position: relative;
 	text-align: left;
+	padding: 0 20px;
 }
 header[role="banner"] {
 	margin-bottom: 15px;
@@ -45,7 +48,8 @@ header[role="banner"] {
 			line-height: 1.72em;
 			font-size: .8em;
 			padding: 0 10px;
-			font-family: 'Roboto', sans-serif;
+			font-family: $sans;
+			background-color: #ccc;
 			$num: 0;
 			@while $num < 5 {
 				&:nth-child(#{$num}) {
@@ -60,18 +64,20 @@ header[role="banner"] {
 		float: right;
 		position: absolute;
 		top: 0;
-		right: 15px;
+		right: 30px;
 		z-index: 3;
 	}
 	.logo {
-		width: 90%;
-		margin: 15px 5% 0;
+		width: 100%;
+		padding: 15px 5% 0;
+		height: auto;
+		border-top: 1px solid $border-color;
 	}
 }
 nav[role="navigation"] {
 	border: {
-		top: 1px solid lighten($text-grey, 50%);
-		bottom: 1px solid lighten($text-grey, 50%);
+		top: 1px solid $border-color;
+		bottom: 1px solid $border-color;
 	}
 	text-align: justify;
 	&:before{
@@ -98,31 +104,276 @@ nav[role="navigation"] {
 		&:hover {
 			background-color: black;
 			color: white;
+			text-decoration: none;
 		}
 	}
 }
 .col-1 {
 	@include inline-block;
 	vertical-align: top;
-	width: 70.5%;
+	width: 69.5%;
+	border-right: 1px solid $border-color;
+	padding-right: 10px;
 	.featured {
 		@include inline-block;
 		vertical-align: top;
 		width: 68%;
-		border-right: 1px solid grey;
+		border-right: 1px solid $border-color;
 		padding-right: 10px;
 	}
 	.top-news {
 		@include inline-block;
 		vertical-align: top;
 		width: 32%;
-		margin-left: -.25em;
+		margin-left: -.26em;
 		padding-left: 10px;
+		border-left: 1px solid $border-color;
+		h4 {
+			margin-top: 0;
+			padding-top: 0;
+		}
+	}
+}
+.top-news {
+	ul {
+		@extend %no-list;
+	}
+	li {
+		@extend %no-list;
+		border-bottom: 1px solid $border-color;
+		&:last-child {
+			border-bottom: 0px;
+		}
+	}
+	a {
+		display: block;
+		margin: 8px 0;
+		color: $text-grey;
+	}
+}
+section[role="slider"] {
+	position: relative;
+	padding-bottom: 30px;
+	border-bottom: 1px solid $border-color;
+	h3 {
+		font-size: 1.1em;
+		color: tint($text-grey, 20%);
+		border: {
+			top: 1px solid $border-color;
+			bottom: 1px solid $border-color;
+			}
+	}
+	.gallery-submit {
+		position: absolute;
+		top: .2em;
+		right: .5em;
+	}
+}
+.sections {
+	@include inline-block;
+	vertical-align: top;
+	width: 68%;
+	padding: 0 5px;
+	margin-bottom: 20px;
+	.box {
+		@include inline-block;
+		vertical-align: top;
+		width:50%;
+		padding: 10px 20px;
+		border-bottom: 1px solid $border-color;
+		height: 300px;
+		overflow: hidden;
+		position: relative;
+		&:nth-child(even) {
+			border-left: 1px solid $border-color;
+		}
+		&:after {
+			position: absolute;
+			background-color: white;
+			bottom: 0;
+			width: 100%;
+			height: 10px;
+			content: "";
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+		h3 {
+			margin-top: 0;
+			padding-top: 0;
+			position: relative;
+			font-size: 1.1em;
+			&:after {
+				position: absolute;
+				top: .2em;
+				right: 0em;
+				color: $border-color;
+				font-size: .5em;
+				content: "view more..."
+			}
+		}
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+.local-events-widget {
+	@include inline-block;
+	vertical-align: top;
+	width: 31.5%;
+	margin: 0 -.25em 20px 0;
+	text-align: right;
+}
+.north-bay-headlines {
+	background-color: #f3f3f5;
+	margin: 0;
+	padding: 10px 10px 10px 40px;
+	li {
+		margin-bottom: 10px;
 	}
 }
 .col-2 {
 	@include inline-block;
 	vertical-align: top;
-	width: 29.5%;
+	width: 30.5%;
 	margin-left: -.25em;
+	padding-left: 10px;
+	text-align: center;
+	time {
+		font-family: $sans;
+		font-size: .8em;
+	}
+}
+[role="search"] {
+	margin: 10px 0;
+	input[type="text"] {
+		margin: 0;
+		width: 85%;
+		@include inline-block;
+	}
+	input[type="submit"] {
+		margin: 0 0 0 -.28em;
+		width: 15%;
+		padding: calc(.3em + 1px) 0;
+		@include inline-block;
+	}
+}
+.most-read {
+	text-align: left;
+	position: relative;
+	margin: 10px 0;
+	height: 220px;
+	padding: 10px 0;
+	border: {
+		top: 1px solid $border-color;
+		bottom: 1px solid $border-color;
+	}
+	h3 {
+		color: shade($text-grey, 50%);
+		margin: 0;
+		padding: 0;
+		font-size: 1.1em;
+		line-height: 1.2em;
+		background-color: tint($border-color, 30%);
+		padding: .2em .3em;
+		@include border-radius(3px);
+	}
+	.nav {
+		position: absolute;
+		top: 1em;
+		right: .3em;
+		span {
+			background-color: shade($border-color, 10%);
+			@include border-radius(3px 3px 0 0);
+			cursor: pointer;
+			margin-right: .35em;
+			padding: .2em .5em;
+			font-size: .8em;
+			&.active {
+				background-color: shade($border-color, 30%);
+				color: white;
+			}
+		}
+	}
+	ul {
+		@extend %no-list;
+		position: absolute;
+		top: 2.3em;
+		left: 0;
+		right: 0;
+		z-index: 5;
+		padding: .3em;
+		background-color: shade($border-color, 30%);
+		@include border-radius(0 0 3px 3px);
+	}
+	li {
+		@extend %no-list;
+		border-bottom: 1px solid $text-grey;
+		border-top: 1px solid $border-color;
+		&:first-child {
+			border-top: 0px;
+		}
+		&:last-child {
+			border-bottom: 0px;
+		}
+		a {
+			display: block;
+			padding: .3em;
+		}
+	}
+}
+.footer-ad {
+	display: block;
+	margin: 10px auto;
+}
+.site-footer {
+	background-color: tint($border-color, 50%);
+	@include border-radius(3px);
+	padding: .3em;
+	margin: 10px 0;
+	.logo {
+		width: 40%;
+		margin-bottom: .5em;
+		display: block;
+		&:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	}
+	.col {
+		@include inline-block;
+		vertical-align: top;
+		margin-left: -.25em;
+		border-top: 1px solid $border-color;
+		border-right: 1px solid $border-color;
+		padding: 20px 40px;
+		width: 25%;
+		min-height: 277px;
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child {
+			border-right: 0;
+		}
+	}
+	h3 {
+		margin-top: 0;
+		margin-bottom: .5em;
+		padding-top: 0;
+		border-bottom: 1px solid $border-color;
+		text-transform: uppercase;
+	}
+	ul, li {
+		@extend %no-list;
+	}
+	li a {
+		padding: .2em 0;
+		font-size: .9em;
+	}
+}
+.footer-copyright {
+	font-size: .9em;
+	text-align: center;
 }

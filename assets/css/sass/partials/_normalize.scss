@@ -63,7 +63,8 @@ hgroup,
 main,
 nav,
 section,
-summary {
+summary,
+time {
     display: block;
 }
 
@@ -225,7 +226,7 @@ h1 {
         @include adjust-font-size-to( $h4-font-size, 1.1 );
         @include leader(.2, $h4-font-size);
         @include trailer(.2, $h4-font-size);
-        border-bottom: 1px solid $text-grey;
+        border-bottom: 1px solid $border-color;
     }
 
     h5 {
