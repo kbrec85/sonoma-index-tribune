@@ -87,7 +87,7 @@ module.exports = function( grunt ) {
 				expand: true,
 				
 				cwd: 'assets/css/css/',
-				src: ['sonoma_index_tribune.css'],
+				src: ['*.css', '!*.min.css'],
 				
 				dest: 'assets/css/',
 				ext: '.min.css'

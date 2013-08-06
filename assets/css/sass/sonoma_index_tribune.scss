@@ -7,18 +7,12 @@
  */
 @import "compass";
 @import "partials/variables";
-
-
 * {
 	@include box-sizing(border-box);
 }
-
-
 @import "partials/normalize";
 @import "partials/typography";
 @import "partials/forms";
-
-@import "partials/category";
 
 .wrapper {
 	width: 1060px;
@@ -39,7 +33,7 @@ header[role="banner"] {
 		vertical-align: top;
 		border-left: 1px solid white;
 		width: 15%;
-		margin-left: -.25em;
+		margin: -1px 0 0 -.25em;
 		a {
 			display: block;
 			color: white;
@@ -59,6 +53,10 @@ header[role="banner"] {
 					background-color: darken(#ccc, $num2);
 					$num: $num + 1;
 				}
+			}
+			&:hover {
+				text-decoration: none;
+				background-color: black;
 			}
 		}
 	}
@@ -107,6 +105,9 @@ nav[role="navigation"] {
 			background-color: black;
 			color: white;
 			text-decoration: none;
+		}
+		&:first-child {
+			margin-left: 0;
 		}
 	}
 }
@@ -388,7 +389,7 @@ section[role="slider"] {
 		height: auto;
 	}
 	p {
-		width: 75%;
+		max-width: 75%;
 		margin-left: auto;
 		margin-right: auto;
 		&:last-child {
