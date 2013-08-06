@@ -549,6 +549,10 @@ body {
   display: block;
   margin: 0 auto; }
 
+h1 {
+  text-align: center;
+  margin-bottom: .5em; }
+
 h2 {
   line-height: 1.3em; }
 
@@ -607,11 +611,28 @@ main article {
   margin-bottom: 10px; }
   main article p:last-child {
     margin-bottom: 0; }
+  main article h1 {
+    text-align: left; }
+  main article .caption {
+    background-color: #c1c1c1;
+    margin-bottom: 10px; }
+    main article .caption p {
+      margin-bottom: 0;
+      padding: .3em 10px; }
 main img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto; }
+main time {
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: .8em;
+  text-align: right; }
+main header h4 {
+  text-align: right;
+  border-bottom: none; }
 
 ul.article-list {
   margin-bottom: 10px; }

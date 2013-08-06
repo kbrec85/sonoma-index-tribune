@@ -978,7 +978,7 @@ section[role="slider"] {
 .caption {
   background-color: #c1c1c1;
   margin-bottom: 20px; }
-  .caption p {
+  .caption p:last-child {
     margin-bottom: 0; }
 
 article time {

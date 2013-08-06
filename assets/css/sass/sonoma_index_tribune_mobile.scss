@@ -25,6 +25,10 @@ body {
 	display: block;
 	margin: 0 auto;
 }
+h1 {
+	text-align: center;
+	margin-bottom: .5em;
+}
 h2 {
 	line-height: 1.3em;
 }
@@ -90,12 +94,34 @@ main {
 		p:last-child {
 			margin-bottom: 0;
 		}
+		h1 {
+			text-align: left;
+		}
+		.caption {
+			background-color: $border-color;
+			margin-bottom: 10px;
+			p {
+				margin-bottom: 0;
+				padding: .3em 10px;
+			}
+		}
 	}
 	img {
 		max-width: 100%;
 		height: auto;
 		display: block;
 		margin: 0 auto;
+	}
+	time {
+		margin-top: 10px;
+		font-family: $sans;
+		font-style: italic;
+		font-size: .8em;
+		text-align: right;
+	}
+	header h4 {
+		text-align: right;
+		border-bottom: none;
 	}
 }
 ul.article-list {

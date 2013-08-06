@@ -432,7 +432,7 @@ section[role="slider"] {
 .caption {
 	background-color: $border-color;
 	margin-bottom: 20px;
-	p {
+	p:last-child {
 		margin-bottom: 0;
 	}
 }
