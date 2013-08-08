@@ -22,6 +22,7 @@ define( '_SIT__VERSION', '0.1.0' );
   *
   * @since 0.1.0
   */
+
  function _sit__setup() {
 	/**
 	 * Makes Sonoma Index Tribune available for translation.
@@ -31,6 +32,9 @@ define( '_SIT__VERSION', '0.1.0' );
 	 * to change '_sit_' to the name of your theme in all template files.
 	 */
 	load_theme_textdomain( '_sit_', get_template_directory() . '/languages' );
+	add_theme_support( 'post-thumbnails' );
+	set_post_thumbnail_size( 200, 115, crop );
+ 	add_theme_support( 'automatic-feed-links' );
  }
  add_action( 'after_setup_theme', '_sit__setup' );
  
@@ -47,13 +51,20 @@ define( '_SIT__VERSION', '0.1.0' );
 	wp_enqueue_style( '_sit_', get_template_directory_uri() . "/assets/css/sonoma_index_tribune{$postfix}.css", array(), _SIT__VERSION );
  }
  add_action( 'wp_enqueue_scripts', '_sit__scripts_styles' );
- 
- /**
-  * Add humans.txt to the <head> element.
-  */
- function _sit__header_meta() {
-	$humans = '<link type="text/plain" rel="author" href="' . get_template_directory_uri() . '/humans.txt" />';
-	
-	echo apply_filters( '_sit__humans', $humans );
- }
- add_action( 'wp_head', '_sit__header_meta' );
+
+function _sit__register_menus() {
+	register_nav_menu('top-menu',__( 'top-menu' ));
+	register_nav_menu('main-menu',__( 'main menu' ));
+	register_nav_menu('find-it-fast',__( 'find-it-fast' ));
+	register_nav_menu('contact-help',__( 'contact-help' ));
+	register_nav_menu('subscribers',__( 'subscribers' ));
+	register_nav_menu('footer-menu',__( 'footer-menu' ));
+}
+add_action( 'init', '_sit__register_menus' );
+function _sit__replace_excerpt($content) {
+       return str_replace('[...]',
+               '<div class="more-link"><a href="'. get_permalink() .'">Continue Reading</a></div>',
+               $content
+       );
+}
+add_filter('the_excerpt', '_sit__replace_excerpt');

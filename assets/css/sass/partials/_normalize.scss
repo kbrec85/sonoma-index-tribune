@@ -206,7 +206,7 @@ h1 {
 
     /* Set 1 unit of vertical rhythm on the top and bottom margins. */
     @include leader(.2, $h1-font-size);
-    @include trailer(.2, $h1-font-size);
+    @include trailer(.3, $h1-font-size);
 }
 
 @if not $strict-normalize or $legacy-support-for-ie6 or $legacy-support-for-ie7 {
