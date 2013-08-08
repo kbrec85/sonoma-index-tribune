@@ -12,8 +12,8 @@ get_header(); ?>
 	if (has_post_thumbnail()) {
 		$featID = get_the_ID();
 	?>
-	<article class="top">
-		<a href="<?php the_permalink();?>"><?php the_post_thumbnail('large'); ?>
+	<article class="top category">
+		<a href="<?php the_permalink();?>"><?php the_post_thumbnail('featured'); ?>
 		<h1><?php the_title();?></h1></a>
 		<?php the_excerpt();?>
 	</article>
@@ -33,7 +33,7 @@ endwhile; endif;?>
 		<h4 class="archive-link"><a href="#">Archive >></a></h4>
 	</div>
 		<div class="local-events-widget">
-			<img src="http://placekitten.com/223/641" width="223" height="641" />
+			<?php if ( dynamic_sidebar('local-events') ) : else : endif;	?>
 		</div>
 </section>
 <?php get_sidebar();

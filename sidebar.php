@@ -13,7 +13,7 @@
         <input type="submit" id="searchsubmit" value="Search" />
 	</form>
 	<div class="weather">
-		<img src="http://placekitten.com/198/104" width="198" height="104" />
+		<?php if ( dynamic_sidebar('sidebar-top') ) : else : endif;	?>
 	</div>
 	<div class="ad">
 		<img src="http://placekitten.com/300/250" width="300" height="250" />

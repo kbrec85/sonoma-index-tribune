@@ -16,7 +16,7 @@
 				if(has_post_thumbnail()){
 					$featured_id = get_the_ID();?>
 					<a href="<?php the_permalink();?>" title="<?php the_title();?>">
-				<?php the_post_thumbnail('large'); ?>
+				<?php the_post_thumbnail('featured'); ?>
 			<h2><?php the_title();?></h2></a>
 			<?php the_excerpt(); 
 				break; }
@@ -52,7 +52,7 @@
 				<a href="#"><h3>Sports</h3></a>
 				<?php $query = new WP_Query('cat=2');
 				if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();?>
-				<a href="<?php the_title();?>">
+				<a href="<?php the_permalink();?>">
 				<?php if(has_post_thumbnail()){
 					the_post_thumbnail('thumbnail');
 					} else {
@@ -66,7 +66,7 @@
 				<a href="#"><h3>Food &amp; Wine</h3></a>
 				<?php $query = new WP_Query('cat=4');
 				if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();?>
-				<a href="<?php the_title();?>">
+				<a href="<?php the_permalink();?>">
 				<?php if(has_post_thumbnail()){
 					the_post_thumbnail('thumbnail');
 					} else {
@@ -80,7 +80,7 @@
 				<a href="#"><h3>Entertainment</h3></a>
 				<?php $query = new WP_Query('cat=5');
 				if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();?>
-				<a href="<?php the_title();?>">
+				<a href="<?php the_permalink();?>">
 				<?php if(has_post_thumbnail()){
 					the_post_thumbnail('thumbnail');
 					} else {
@@ -94,7 +94,7 @@
 				<a href="#"><h3>Opinion</h3></a>
 				<?php $query = new WP_Query('cat=8');
 				if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();?>
-				<a href="<?php the_title();?>">
+				<a href="<?php the_permalink();?>">
 				<?php if(has_post_thumbnail()){
 					the_post_thumbnail('thumbnail');
 					} else {
@@ -113,7 +113,7 @@
 			</ul>
 		</div>
 		<div class="local-events-widget">
-			<img src="http://placekitten.com/223/641" width="223" height="641" />
+			<?php if ( dynamic_sidebar('local-events') ) : else : endif;	?>
 		</div>
 	</section>
 </section>
