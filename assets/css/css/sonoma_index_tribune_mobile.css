@@ -136,20 +136,20 @@ blockquote {
 h1 {
   /* Set the font-size and line-height while keeping a proper vertical rhythm. */
   font-size: 2em;
-  line-height: 0.75em;
+  line-height: 0.975em;
   /* Set 1 unit of vertical rhythm on the top and bottom margins. */
   margin-top: 0.3em;
   margin-bottom: 0.6em; }
 
 h2 {
   font-size: 2em;
-  line-height: 0.75em;
+  line-height: 1.2em;
   margin-top: 0.3em;
   margin-bottom: 0.3em; }
 
 h3 {
   font-size: 1.17em;
-  line-height: 1.28205em;
+  line-height: 1.66667em;
   margin-top: 0.51282em;
   margin-bottom: 0.51282em; }
 
@@ -162,13 +162,13 @@ h4 {
 
 h5 {
   font-size: 0.83em;
-  line-height: 1.80723em;
+  line-height: 2.3494em;
   margin-top: 0.36145em;
   margin-bottom: 0.36145em; }
 
 h6 {
   font-size: 0.67em;
-  line-height: 2.23881em;
+  line-height: 2.91045em;
   margin-top: 0.44776em;
   margin-bottom: 0.44776em; }
 

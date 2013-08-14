@@ -13,6 +13,7 @@
 @import "partials/normalize";
 @import "partials/typography";
 @import "partials/forms";
+@import "partials/galswiper";
 
 .wrapper {
 	width: 1060px;
@@ -156,24 +157,6 @@ nav[role="navigation"] {
 		display: block;
 		margin: 8px 0;
 		color: $text-grey;
-	}
-}
-section[role="slider"] {
-	position: relative;
-	padding-bottom: 30px;
-	border-bottom: 1px solid $border-color;
-	h3 {
-		font-size: 1.1em;
-		color: tint($text-grey, 20%);
-		border: {
-			top: 1px solid $border-color;
-			bottom: 1px solid $border-color;
-			}
-	}
-	.gallery-submit {
-		position: absolute;
-		top: .2em;
-		right: .5em;
 	}
 }
 .sections {
@@ -402,11 +385,11 @@ section[role="slider"] {
 		width: 100%;
 		height: auto;
 	}
-	p {
+	[itemprop="articleBody"] {
 		max-width: 75%;
 		margin-left: auto;
 		margin-right: auto;
-		&:last-child {
+		p:last-child {
 			margin-bottom: 0px;
 		}
 	}
@@ -484,10 +467,10 @@ article {
 	h4 {
 		border: 0px;
 	}
-	&.category {
-		p {
-			max-width: 100%;
-		}
+	.authorpic {
+		width: 10%;
+		float: left;
+		margin-right: 20px;
 	}
 }
 #disqus_thread {

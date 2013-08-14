@@ -18,7 +18,9 @@ module.exports = function( grunt ) {
 			},
 			sonoma_index_tribune: {
 				src: [
-					'assets/js/src/sonoma_index_tribune.js'
+					'assets/js/src/*.js',
+					'assets/js/vendor/*.js',
+
 				],
 				dest: 'assets/js/sonoma_index_tribune.js'
 			}

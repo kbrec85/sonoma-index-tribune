@@ -41,10 +41,42 @@
 		<div class="gallery-submit">
 			Submit Your: <a href="#">Photos</a> | <a href="#">Videos</a>
 		</div>
-		<img src="http://placekitten.com/144/108" width="144" height="108" />
-		<img src="http://placekitten.com/144/108" width="144" height="108" />
-		<img src="http://placekitten.com/144/108" width="144" height="108" />
-		<img src="http://placekitten.com/144/108" width="144" height="108" />
+		<a class="swipe-nav nav-left"><img src="http://img.pressdemocrat.com/arrows/left-arrow.png"></a>
+		<div class="swiper-container"><div class="pagination"></div><div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img src="http://placekitten.com/144/108" width="144" height="108" />
+				This is a caption for an image
+			</div>
+			<div class="swiper-slide">
+				<img src="http://placekitten.com/144/108" width="144" height="108" />
+				This is a caption for an image
+			</div>
+			<div class="swiper-slide">
+				<img src="http://placekitten.com/144/108" width="144" height="108" />
+				This is a caption for an image
+			</div>
+			<div class="swiper-slide">
+				<img src="http://placekitten.com/144/108" width="144" height="108" />
+				This is a caption for an image
+			</div>
+			<div class="swiper-slide">
+				<img src="http://placekitten.com/144/108" width="144" height="108" />
+				This is a caption for an image
+			</div>
+			<div class="swiper-slide">
+				<img src="http://placekitten.com/144/108" width="144" height="108" />
+				This is a caption for an image
+			</div>
+			<div class="swiper-slide">
+				<img src="http://placekitten.com/144/108" width="144" height="108" />
+				This is a caption for an image
+			</div>
+			<div class="swiper-slide">
+				<img src="http://placekitten.com/144/108" width="144" height="108" />
+				This is a caption for an image
+			</div>
+		</div></div>
+		<a class="swipe-nav nav-right"><img src="http://img.pressdemocrat.com/arrows/right-arrow.png"></a>
 	</section>
 	<section>
 		<div class="sections">

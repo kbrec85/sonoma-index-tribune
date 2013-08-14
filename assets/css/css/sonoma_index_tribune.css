@@ -136,20 +136,20 @@ blockquote {
 h1 {
   /* Set the font-size and line-height while keeping a proper vertical rhythm. */
   font-size: 2em;
-  line-height: 0.75em;
+  line-height: 0.975em;
   /* Set 1 unit of vertical rhythm on the top and bottom margins. */
   margin-top: 0.3em;
   margin-bottom: 0.6em; }
 
 h2 {
   font-size: 2em;
-  line-height: 0.75em;
+  line-height: 1.2em;
   margin-top: 0.3em;
   margin-bottom: 0.3em; }
 
 h3 {
   font-size: 1.17em;
-  line-height: 1.28205em;
+  line-height: 1.66667em;
   margin-top: 0.51282em;
   margin-bottom: 0.51282em; }
 
@@ -162,13 +162,13 @@ h4 {
 
 h5 {
   font-size: 0.83em;
-  line-height: 1.80723em;
+  line-height: 2.3494em;
   margin-top: 0.36145em;
   margin-bottom: 0.36145em; }
 
 h6 {
   font-size: 0.67em;
-  line-height: 2.23881em;
+  line-height: 2.91045em;
   margin-top: 0.44776em;
   margin-bottom: 0.44776em; }
 
@@ -595,6 +595,139 @@ input[type="submit"] {
   line-height: 1.2em;
   border: 0px; }
 
+/*
+ * Swiper - Mobile Touch Slider CSS
+ * http://www.idangero.us/sliders/swiper
+ *
+ * Vladimir Kharlampidi, The iDangero.us
+ * http://www.idangero.us/
+ * 
+ * Copyright 2012, Vladimir Kharlampidi
+ * The iDangero.us
+ * http://www.idangero.us
+ *
+ * Licensed under GPL & MIT
+ *
+*/
+/* Swiper Styles */
+section[role="slider"] {
+  position: relative;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #c1c1c1; }
+  section[role="slider"] h3 {
+    font-size: 1.1em;
+    color: #5b5b5b;
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1; }
+  section[role="slider"] .gallery-submit {
+    position: absolute;
+    top: .2em;
+    right: .5em; }
+
+.pagination {
+  left: 6px;
+  top: 0;
+  position: absolute;
+  z-index: 20; }
+
+.swiper-pagination-switch {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  height: .6em;
+  width: .6em;
+  background: none repeat scroll 0 0 #555555;
+  border: 1px solid #FFFFFF;
+  border-radius: .6em;
+  margin: 0 .1em;
+  opacity: 0.8; }
+
+.swiper-active-switch {
+  background: none repeat scroll 0 0 #FFFFFF; }
+
+.swiper-container {
+  margin: 0 15px;
+  position: relative;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* Fix of Webkit flickering */
+  z-index: 1;
+  font-family: "Roboto", sans-serif; }
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  -webkit-transition-property: -webkit-transform, left, top;
+  -webkit-transition-duration: 0s;
+  -webkit-transform: translate3d(0px, 0, 0);
+  -webkit-transition-timing-function: ease;
+  -moz-transition-property: -moz-transform, left, top;
+  -moz-transition-duration: 0s;
+  -moz-transform: translate3d(0px, 0, 0);
+  -moz-transition-timing-function: ease;
+  -o-transition-property: -o-transform, left, top;
+  -o-transition-duration: 0s;
+  -o-transform: translate3d(0px, 0, 0);
+  -o-transition-timing-function: ease;
+  -o-transform: translate(0px, 0px);
+  -ms-transition-property: -ms-transform, left, top;
+  -ms-transition-duration: 0s;
+  -ms-transform: translate3d(0px, 0, 0);
+  -ms-transition-timing-function: ease;
+  transition-property: transform, left, top;
+  transition-duration: 0s;
+  transform: translate3d(0px, 0, 0);
+  transition-timing-function: ease; }
+
+/* IE10 Windows Phone 8 Fixes */
+.swiper-wp8-horizontal {
+  -ms-touch-action: pan-y; }
+
+.swiper-wp8-vertical {
+  -ms-touch-action: pan-x; }
+
+/* Specify Swiper's Size: */
+.swiper-container {
+  height: 11em; }
+
+.swiper-slide {
+  width: 164px;
+  height: auto;
+  text-align: center;
+  padding: 0 5px;
+  float: left;
+  font-size: .8em; }
+
+.swiper-slide img {
+  width: 100%;
+  height: auto; }
+
+a.swipe-nav {
+  position: absolute;
+  display: block;
+  width: 11px;
+  height: 11em;
+  background-color: #c1c1c1;
+  text-align: center;
+  top: 2.1em;
+  text-align: center;
+  cursor: pointer; }
+  a.swipe-nav img {
+    padding-top: 4.5em; }
+  a.swipe-nav.nav-left {
+    left: 0px; }
+  a.swipe-nav.nav-right {
+    right: 0px; }
+  a.swipe-nav:hover {
+    background-color: #333333; }
+
 .wrapper {
   width: 1060px;
   margin: 0 auto;
@@ -744,20 +877,6 @@ nav[role="navigation"] {
   display: block;
   margin: 8px 0;
   color: #333333; }
-
-section[role="slider"] {
-  position: relative;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #c1c1c1; }
-  section[role="slider"] h3 {
-    font-size: 1.1em;
-    color: #5b5b5b;
-    border-top: 1px solid #c1c1c1;
-    border-bottom: 1px solid #c1c1c1; }
-  section[role="slider"] .gallery-submit {
-    position: absolute;
-    top: .2em;
-    right: .5em; }
 
 .sections {
   display: -moz-inline-stack;
@@ -1002,11 +1121,11 @@ section[role="slider"] {
   .top img {
     width: 100%;
     height: auto; }
-  .top p {
+  .top [itemprop="articleBody"] {
     max-width: 75%;
     margin-left: auto;
     margin-right: auto; }
-    .top p:last-child {
+    .top [itemprop="articleBody"] p:last-child {
       margin-bottom: 0px; }
 
 .sections > article {
@@ -1084,8 +1203,10 @@ article {
     margin-left: .1em; }
   article h4 {
     border: 0px; }
-  article.category p {
-    max-width: 100%; }
+  article .authorpic {
+    width: 10%;
+    float: left;
+    margin-right: 20px; }
 
 #disqus_thread {
   margin-top: 10px; }

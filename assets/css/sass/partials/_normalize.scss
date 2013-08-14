@@ -198,7 +198,7 @@ a:hover {
 h1 {
     /* Set the font-size and line-height while keeping a proper vertical rhythm. */
     @if not $strict-normalize or $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-        @include adjust-font-size-to( $h1-font-size, 1 );
+        @include adjust-font-size-to( $h1-font-size, 1.3 );
     }
     @else {
         font-size: 1em * ($h1-font-size / $base-font-size);
@@ -211,13 +211,13 @@ h1 {
 
 @if not $strict-normalize or $legacy-support-for-ie6 or $legacy-support-for-ie7 {
     h2 {
-        @include adjust-font-size-to( $h2-font-size, 1 );
+        @include adjust-font-size-to( $h2-font-size, 1.6 );
         @include leader(.4, $h2-font-size);
         @include trailer(.4, $h2-font-size);
     }
 
     h3 {
-        @include adjust-font-size-to( $h3-font-size, 1 );
+        @include adjust-font-size-to( $h3-font-size, 1.3 );
         @include leader(.4, $h3-font-size);
         @include trailer(.4, $h3-font-size);
     }
@@ -230,13 +230,13 @@ h1 {
     }
 
     h5 {
-        @include adjust-font-size-to( $h5-font-size, 1 );
+        @include adjust-font-size-to( $h5-font-size, 1.3 );
         @include leader(.2, $h5-font-size);
         @include trailer(.2, $h5-font-size);
     }
 
     h6 {
-        @include adjust-font-size-to( $h6-font-size, 1 );
+        @include adjust-font-size-to( $h6-font-size, 1.3 );
         @include leader(.2, $h6-font-size);
         @include trailer(.2, $h6-font-size);
     }

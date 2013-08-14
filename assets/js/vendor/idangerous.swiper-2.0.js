@@ -1,29 +1,15 @@
-/*! Sonoma Index Tribune - v0.1.0 - 2013-08-13
- * http://www.sonomanews.com
- * Copyright (c) 2013; * Licensed GPLv2+ */
-( function( window, undefined ) {
-	'use strict';
-
-
- } )( this );
-jQuery(document).ready(function($) {
-	var mySwiper = $('.swiper-container').swiper({
-		//Your options here:
-		mode:'horizontal',
-		loop: true,
-		slidesPerView: 4,
-		pagination: '.pagination',
-		paginationClickable: true,
-
-		//etc..
-	});
-  $('.swipe-nav.nav-left ').click(function() {
-  	mySwiper.swipePrev()
-  })
-  $('.swipe-nav.nav-right').click(function() {
-  	mySwiper.swipeNext()
-  })
-})
+/*
+ * Swiper 2.0 - Mobile Touch Slider
+ * http://www.idangero.us/sliders/swiper/
+ *
+ * Copyright 2012-2013, Vladimir Kharlampidi
+ * The iDangero.us
+ * http://www.idangero.us/
+ *
+ * Licensed under GPL & MIT
+ *
+ * Updated on: June 9, 2013
+*/
 var Swiper = function (selector, params) {
     /*=========================
       A little bit dirty but required part for IE8 and old FF support
