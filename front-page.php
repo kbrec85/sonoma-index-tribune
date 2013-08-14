@@ -43,38 +43,20 @@
 		</div>
 		<a class="swipe-nav nav-left"><img src="http://img.pressdemocrat.com/arrows/left-arrow.png"></a>
 		<div class="swiper-container"><div class="pagination"></div><div class="swiper-wrapper">
-			<div class="swiper-slide">
-				<img src="http://placekitten.com/144/108" width="144" height="108" />
-				This is a caption for an image
-			</div>
-			<div class="swiper-slide">
-				<img src="http://placekitten.com/144/108" width="144" height="108" />
-				This is a caption for an image
-			</div>
-			<div class="swiper-slide">
-				<img src="http://placekitten.com/144/108" width="144" height="108" />
-				This is a caption for an image
-			</div>
-			<div class="swiper-slide">
-				<img src="http://placekitten.com/144/108" width="144" height="108" />
-				This is a caption for an image
-			</div>
-			<div class="swiper-slide">
-				<img src="http://placekitten.com/144/108" width="144" height="108" />
-				This is a caption for an image
-			</div>
-			<div class="swiper-slide">
-				<img src="http://placekitten.com/144/108" width="144" height="108" />
-				This is a caption for an image
-			</div>
-			<div class="swiper-slide">
-				<img src="http://placekitten.com/144/108" width="144" height="108" />
-				This is a caption for an image
-			</div>
-			<div class="swiper-slide">
-				<img src="http://placekitten.com/144/108" width="144" height="108" />
-				This is a caption for an image
-			</div>
+			<?php $slider = new WP_Query(array('post_type' => '_sit__galleries', 'posts_per_page' => 8,));
+				if ( $slider->have_posts() ) : while ( $slider->have_posts() ) : $slider->the_post();
+			?>
+				<div class="swiper-slide"><a href="<?php the_permalink();?>">
+					<?php if(has_post_thumbnail()){the_post_thumbnail('thumbnail');}else{
+						$attachments = get_posts(array('post_type' => 'attachment', 'numberposts' => 1, 'post_status' => null, 'post_parent' => $post->ID));
+						foreach($attachments as $attachment){
+							$src = wp_get_attachment_image_src($attachment->ID, 'thumbnail');
+							echo '<img src="'.$src[0].'" alt="'.get_the_title().'" />';
+						}
+					} 
+					the_title();?>
+				</a></div>
+			<?php endwhile; endif; ?>
 		</div></div>
 		<a class="swipe-nav nav-right"><img src="http://img.pressdemocrat.com/arrows/right-arrow.png"></a>
 	</section>
@@ -137,12 +119,7 @@
 				<?php the_excerpt(); endwhile; endif; ?>
 			</div>
 			<h4>Headlines from around the North Bay</h4>
-			<ul class="north-bay-headlines">
-				<li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
-				<li><a href="#">Aliquam tincidunt mauris eu risus.</a></li>
-				<li><a href="#">Vestibulum auctor dapibus neque.</a></li>
-				<li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
-			</ul>
+			<?php if ( dynamic_sidebar('around-the-bay') ) : else : endif;	?>
 		</div>
 		<div class="local-events-widget">
 			<?php if ( dynamic_sidebar('local-events') ) : else : endif;	?>

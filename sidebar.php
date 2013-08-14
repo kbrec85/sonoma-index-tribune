@@ -20,19 +20,8 @@
 	</div>
 	<div class="most-read">
 		<h3>Most Read Stories</h3>
-		<p class="nav"><span>Today</span><span>This Week</span></p>
-		<ul class="today">
-			<li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
-			<li><a href="#">Aliquam tincidunt mauris eu risus.</a></li>
-			<li><a href="#">Vestibulum auctor dapibus neque.</a></li>
-			<li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
-		</ul>
-		<ul class="this-week">
-			<li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
-			<li><a href="#">Aliquam tincidunt mauris eu risus.</a></li>
-			<li><a href="#">Vestibulum auctor dapibus neque.</a></li>
-			<li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
-		</ul>
+		<p class="nav"><span class="active today">Today</span><span class="week">This Week</span></p>
+		<?php if ( dynamic_sidebar('popular-posts') ) : else : endif;	?>
 	</div>
 	<div class="ad">
 		<img src="http://placekitten.com/300/600" width="300" height="600" />

@@ -49,9 +49,25 @@ define( '_SIT__VERSION', '0.1.0' );
 		'after_title' => '</h3>',
 	) );
 	register_sidebar( array(
+		'name' => 'Popular Posts',
+		'id' => 'popular-posts',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
 		'name' => 'Local Events Widget',
 		'id' => 'local-events',
 		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => 'Around the Bay',
+		'id' => 'around-the-bay',
+		'before_widget' => '<div class="north-bay-headlines">',
 		'after_widget' => '</div>',
 		'before_title' => '<h3>',
 		'after_title' => '</h3>',

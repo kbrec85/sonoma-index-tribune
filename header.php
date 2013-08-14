@@ -6,8 +6,6 @@
  * @since 0.1.0
  */
  ?><!DOCTYPE html>
- <!DOCTYPE html>
-
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
@@ -32,4 +30,5 @@
 	<a href="/"><img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/the-sonoma-index-tribune.jpg" width="900" height="75" /></a>
 	<nav role="navigation">
 		<?php echo strip_tags(wp_nav_menu(array('theme_location' => 'main-menu', 'items_wrap' => '%3$s', 'container' => '','echo' => false, 'depth' => 0) ), '<a>'); ?>
+	</nav>
 </header>

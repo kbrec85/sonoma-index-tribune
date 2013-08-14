@@ -5,7 +5,7 @@
  * Copyright (c) 2013 Kyle Breckenridge
  * Licensed under the GPLv2+ license.
  */
-.top-news ul, .top-news li, .most-read ul, .most-read li, .site-footer ul, .site-footer li {
+.top-news ul, .top-news li, .north-bay-headlines ul, .north-bay-headlines li, .most-read ul.wpp-list, .most-read ul.wpp-list li, .site-footer ul, .site-footer li {
   margin: 0;
   padding: 0;
   list-style: none; }
@@ -621,8 +621,11 @@ section[role="slider"] {
     border-bottom: 1px solid #c1c1c1; }
   section[role="slider"] .gallery-submit {
     position: absolute;
-    top: .2em;
+    top: .4em;
     right: .5em; }
+
+.full-slider {
+  position: relative; }
 
 .pagination {
   left: 6px;
@@ -648,7 +651,7 @@ section[role="slider"] {
 .swiper-active-switch {
   background: none repeat scroll 0 0 #FFFFFF; }
 
-.swiper-container {
+.swiper-container, .full-swiper-container {
   margin: 0 15px;
   position: relative;
   overflow: hidden;
@@ -698,12 +701,13 @@ section[role="slider"] {
   height: 11em; }
 
 .swiper-slide {
-  width: 164px;
   height: auto;
   text-align: center;
   padding: 0 5px;
   float: left;
   font-size: .8em; }
+  .full-swiper-container .swiper-slide {
+    height: auto !important; }
 
 .swiper-slide img {
   width: 100%;
@@ -716,8 +720,7 @@ a.swipe-nav {
   height: 11em;
   background-color: #c1c1c1;
   text-align: center;
-  top: 2.1em;
-  text-align: center;
+  top: 2.5em;
   cursor: pointer; }
   a.swipe-nav img {
     padding-top: 4.5em; }
@@ -726,6 +729,26 @@ a.swipe-nav {
   a.swipe-nav.nav-right {
     right: 0px; }
   a.swipe-nav:hover {
+    background-color: #333333; }
+
+a.full-swipe-nav {
+  position: absolute;
+  display: block;
+  top: 0;
+  width: 15px;
+  height: 100%;
+  background-color: #c1c1c1;
+  text-align: center;
+  cursor: pointer; }
+  a.full-swipe-nav img {
+    position: absolute;
+    top: 50%;
+    margin: -10px 0 0 -4px; }
+  a.full-swipe-nav.full-nav-left {
+    left: 0px; }
+  a.full-swipe-nav.full-nav-right {
+    right: 0px; }
+  a.full-swipe-nav:hover {
     background-color: #333333; }
 
 .wrapper {
@@ -819,7 +842,7 @@ nav[role="navigation"] {
     text-transform: uppercase;
     position: relative;
     top: 1.2em;
-    padding: 0 5px;
+    padding: 0 2px;
     margin-left: -.25em; }
     nav[role="navigation"] a:hover {
       background-color: black;
@@ -954,8 +977,7 @@ nav[role="navigation"] {
 
 .north-bay-headlines {
   background-color: #f3f3f5;
-  margin: 0;
-  padding: 10px 10px 10px 40px; }
+  padding: 10px; }
   .north-bay-headlines li {
     margin-bottom: 10px; }
 
@@ -1036,7 +1058,7 @@ nav[role="navigation"] {
       .most-read .nav span.active {
         background-color: #878787;
         color: white; }
-  .most-read ul {
+  .most-read > div {
     position: absolute;
     top: 2.3em;
     left: 0;
@@ -1049,16 +1071,15 @@ nav[role="navigation"] {
     -ms-border-radius: 0 0 3px 3px;
     -o-border-radius: 0 0 3px 3px;
     border-radius: 0 0 3px 3px; }
-  .most-read li {
+  .most-read ul.wpp-list li {
     border-bottom: 1px solid #333333;
-    border-top: 1px solid #c1c1c1; }
-    .most-read li:first-child {
+    border-top: 1px solid #c1c1c1;
+    overflow: none;
+    padding: .3em; }
+    .most-read ul.wpp-list li:first-child {
       border-top: 0px; }
-    .most-read li:last-child {
+    .most-read ul.wpp-list li:last-child {
       border-bottom: 0px; }
-    .most-read li a {
-      display: block;
-      padding: .3em; }
 
 .footer-ad {
   display: block;

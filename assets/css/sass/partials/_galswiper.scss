@@ -30,9 +30,12 @@ section[role="slider"] {
 	}
 	.gallery-submit {
 		position: absolute;
-		top: .2em;
+		top: .4em;
 		right: .5em;
 	}
+}
+.full-slider {
+	position: relative;
 }
 
 .pagination {
@@ -55,7 +58,7 @@ section[role="slider"] {
 	background:none repeat scroll 0 0 #FFFFFF;
 }
 
-.swiper-container {
+.swiper-container, .full-swiper-container {
 	margin:0 15px;
 	position:relative;
 	overflow:hidden;
@@ -113,12 +116,14 @@ section[role="slider"] {
 }
 
 .swiper-slide {
-	width: 164px;
 	height: auto;
 	text-align: center;
 	padding: 0 5px;
 	float: left;
 	font-size: .8em;
+	.full-swiper-container & {
+		height: auto !important;
+	}
 }
 
 .swiper-slide img{
@@ -133,8 +138,7 @@ a.swipe-nav {
 	height:11em;
 	background-color:$border-color;
 	text-align:center;
-	top: 2.1em;
-	text-align: center;
+	top: 2.5em;
 	cursor: pointer;
 	img {
 		padding-top: 4.5em;
@@ -148,4 +152,29 @@ a.swipe-nav {
 	&:hover {
 		background-color: $text-grey;
 	}
+}
+a.full-swipe-nav {
+	position: absolute;
+	display: block;
+	top: 0;
+	width: 15px;
+	height: 100%;
+	background-color: $border-color;
+	text-align: center;
+	cursor: pointer;
+	img {
+		position: absolute;
+		top: 50%;
+		margin: -10px 0 0 -4px;
+	}
+	&.full-nav-left {
+		left: 0px;
+	}
+	&.full-nav-right {
+		right: 0px;
+	}
+	&:hover {
+		background-color: $text-grey;
+	}
+
 }
