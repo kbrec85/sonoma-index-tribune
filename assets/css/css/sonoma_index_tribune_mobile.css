@@ -656,10 +656,12 @@ header[role="banner"] {
     background-image: -o-linear-gradient(#333333, #333333 20%, transparent 20%, transparent 40%, #333333 40%, #333333 60%, transparent 60%, transparent 80%, #333333 80%, #333333 100%);
     background-image: linear-gradient(#333333, #333333 20%, transparent 20%, transparent 40%, #333333 40%, #333333 60%, transparent 60%, transparent 80%, #333333 80%, #333333 100%);
     width: 8%;
-    height: 21px;
-    margin: 10px 0 0 0;
-    float: right;
-    cursor: pointer; }
+    height: 30%;
+    margin: 1.5% 0 0 0;
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    right: 0; }
 
 main article {
   border-bottom: 1px solid #c1c1c1;
@@ -694,6 +696,8 @@ ul.article-list {
   margin-bottom: 10px; }
   ul.article-list li {
     border-bottom: 1px solid #c1c1c1; }
+    ul.article-list li:last-of-type {
+      border-bottom: 0px; }
   ul.article-list a {
     display: block;
     margin: 8px 0;
@@ -743,3 +747,10 @@ footer.site-footer {
   margin-top: 20px; }
   footer.site-footer a {
     font-weight: bold; }
+    footer.site-footer a:after {
+      content: " | "; }
+    footer.site-footer a:last-of-type:after {
+      content: ""; }
+
+.share {
+  margin-top: 10px; }

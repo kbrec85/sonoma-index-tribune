@@ -5,8 +5,16 @@
  * @package Sonoma Index Tribune
  * @since 0.1.0
  */
- 
- get_header(); ?>
+ $tempdir = get_template_directory();
+ require_once ($tempdir.'/includes/mobile_detect.php');
+ $browser = new Mobile_Detect();
+ if($browser->isMobile()){
+ 	include($tempdir.'/header_mobile.php');
+ 	include($tempdir.'/front-page-mobile.php');
+ 	include($tempdir.'/footer-mobile.php');
+ } else {
+ 	get_header();
+ ?>
  <section class="col-1">
 	<main>
 		<div class="featured">
@@ -128,4 +136,4 @@
 </section>
 
 <?php get_sidebar();
-get_footer(); ?>
+get_footer(); }?>

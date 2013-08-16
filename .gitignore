@@ -2,3 +2,4 @@ node_modules
 .sass-cache
 *.zip
 *sass-chache
+sftp-config.json

@@ -71,7 +71,6 @@ module.exports = function( grunt ) {
 		      sassDir: 'assets/css/sass',
 		      cssDir: 'assets/css/css',
 		      environment: 'production',
-		      require: 'singularitygs',
 		      outputStyle: 'nested',
 		    }
 		  },

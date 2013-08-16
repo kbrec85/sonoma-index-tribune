@@ -17,7 +17,7 @@
 				<?php 
 					$attachments = get_posts(array('post_type' => 'attachment', 'numberposts' => -1, 'post_status' => null, 'post_parent' => $post->ID));
 					foreach($attachments as $attachment){
-							$src = wp_get_attachment_image_src($attachment->ID);
+							$src = wp_get_attachment_image_src($attachment->ID, 'featured');
 							$alt = get_post_meta( $attachment->ID, '_wp_attachment_image_alt', true );
 							if(!$alt){$alt=get_the_title();}
 							$caption = $attachment->post_excerpt;

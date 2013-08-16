@@ -58,3 +58,8 @@ jQuery('.most-read .nav span').bind("click", function($) {
 		}
 	}
 });
+
+jQuery('[data-icon="P"]').bind("click", function(e) {
+	e.preventDefault();
+	window.print();
+});
