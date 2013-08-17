@@ -7,7 +7,10 @@
  */
 ?>
 
-<img src="http://placekitten.com/728/90" width="728" height="90" class="footer-ad" />
+<!-- DONT BLAME ME FOR THE INLINE CSS!!! - SW -->
+<div id="leader_pos2" class="ad footerad" style="text-align:center;padding-bottom:20px;margin:0 auto;">
+      <script type="text/javascript">yld_mgr.place_ad_here("ad728x90pos2");</script>
+</div>
 <footer class="site-footer">
 	<img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/the-sonoma-index-tribune.jpg" width="357" height="31" />
 	<div class="col">

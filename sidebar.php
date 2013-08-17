@@ -16,7 +16,7 @@
 		<?php if ( dynamic_sidebar('sidebar-top') ) : else : endif;	?>
 	</div>
 	<div class="ad">
-		<img src="http://placekitten.com/300/250" width="300" height="250" />
+		<script>yld_mgr.place_ad_here("ad300x250pos1");</script>
 	</div>
 	<div class="most-read">
 		<h3>Most Read Stories</h3>
@@ -24,7 +24,7 @@
 		<?php if ( dynamic_sidebar('popular-posts') ) : else : endif;	?>
 	</div>
 	<div class="ad">
-		<img src="http://placekitten.com/300/600" width="300" height="600" />
+		<script>yld_mgr.place_ad_here("ad300x600pos1");</script>
 	</div>
 	<img src="http://placekitten.com/300/112" width="300" height="112" />
 </aside>
