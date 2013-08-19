@@ -34,7 +34,7 @@
 				<li><a href="#nowhere" title="Pellentesque fermentum dolor">Pellentesque</a></li>
 			</ul>
 		</nav>
-	</div>s
+	</div>
 	<div class="col">
 		<h3>Contact &amp; Help</h3>
 		<nav>
