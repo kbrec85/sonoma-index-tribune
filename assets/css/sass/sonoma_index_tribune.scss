@@ -28,6 +28,7 @@ header[role="banner"] {
 		@include inline-block;
 		vertical-align: top;
 		margin-left: 15px;
+		width: 728px;
 	}
 	.top-nav {
 		@include inline-block;
@@ -132,10 +133,8 @@ nav[role="navigation"] {
 	.top-news {
 		@include inline-block;
 		vertical-align: top;
-		width: 32%;
-		margin-left: -.26em;
+		width: 31%;
 		padding-left: 10px;
-		border-left: 1px solid $border-color;
 		h4 {
 			margin-top: 0;
 			padding-top: 0;
@@ -236,8 +235,7 @@ nav[role="navigation"] {
 .col-2 {
 	@include inline-block;
 	vertical-align: top;
-	width: 30.5%;
-	margin-left: -.25em;
+	width: 30%;
 	padding-left: 10px;
 	text-align: center;
 	time {

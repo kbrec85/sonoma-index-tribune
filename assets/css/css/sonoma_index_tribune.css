@@ -768,7 +768,8 @@ header[role="banner"] {
     zoom: 1;
     *display: inline;
     vertical-align: top;
-    margin-left: 15px; }
+    margin-left: 15px;
+    width: 728px; }
   header[role="banner"] .top-nav {
     display: -moz-inline-stack;
     display: inline-block;
@@ -884,10 +885,8 @@ nav[role="navigation"] {
     zoom: 1;
     *display: inline;
     vertical-align: top;
-    width: 32%;
-    margin-left: -.26em;
-    padding-left: 10px;
-    border-left: 1px solid #c1c1c1; }
+    width: 31%;
+    padding-left: 10px; }
     .col-1 .top-news h4 {
       margin-top: 0;
       padding-top: 0; }
@@ -989,8 +988,7 @@ nav[role="navigation"] {
   zoom: 1;
   *display: inline;
   vertical-align: top;
-  width: 30.5%;
-  margin-left: -.25em;
+  width: 30%;
   padding-left: 10px;
   text-align: center; }
   .col-2 time {
