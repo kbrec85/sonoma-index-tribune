@@ -72,7 +72,7 @@
 		<div class="sections">
 			<div class="box">
 				<a href="#"><h3>Sports</h3></a>
-				<?php $query = new WP_Query('cat=2');
+				<?php $query = new WP_Query('cat=2&posts_per_page=1');
 				if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();?>
 				<a href="<?php the_permalink();?>">
 				<?php if(has_post_thumbnail()){
@@ -86,7 +86,7 @@
 			</div><!--
 			--><div class="box">
 				<a href="#"><h3>Food &amp; Wine</h3></a>
-				<?php $query = new WP_Query('cat=4');
+				<?php $query = new WP_Query('cat=4&posts_per_page=1');
 				if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();?>
 				<a href="<?php the_permalink();?>">
 				<?php if(has_post_thumbnail()){
@@ -100,7 +100,7 @@
 			</div><!--
 			--><div class="box">
 				<a href="#"><h3>Entertainment</h3></a>
-				<?php $query = new WP_Query('cat=5');
+				<?php $query = new WP_Query('cat=5&posts_per_page=1');
 				if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();?>
 				<a href="<?php the_permalink();?>">
 				<?php if(has_post_thumbnail()){
@@ -114,7 +114,7 @@
 			</div><!--
 			--><div class="box">
 				<a href="#"><h3>Opinion</h3></a>
-				<?php $query = new WP_Query('cat=8');
+				<?php $query = new WP_Query('cat=8&posts_per_page=1');
 				if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();?>
 				<a href="<?php the_permalink();?>">
 				<?php if(has_post_thumbnail()){

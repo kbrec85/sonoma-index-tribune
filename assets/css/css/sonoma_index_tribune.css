@@ -73,7 +73,7 @@ audio:not([controls]) {
  *    `em` units.
  */
 html {
-  font-family: Georiga, "Times New Roman", Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   /* 1 */
   font-size: 100%;
   /* 3 */
@@ -90,7 +90,7 @@ button,
 input,
 select,
 textarea {
-  font-family: Georiga, "Times New Roman", Times, serif; }
+  font-family: Georgia, "Times New Roman", Times, serif; }
 
 /**
  * Remove default margin.
@@ -667,6 +667,7 @@ section[role="slider"] {
 .swiper-wrapper {
   position: relative;
   width: 100%;
+  height: auto !important;
   -webkit-transition-property: -webkit-transform, left, top;
   -webkit-transition-duration: 0s;
   -webkit-transform: translate3d(0px, 0, 0);
@@ -1021,7 +1022,6 @@ nav[role="navigation"] {
   text-align: left;
   position: relative;
   margin: 10px 0;
-  height: 220px;
   padding: 10px 0;
   border-top: 1px solid #c1c1c1;
   border-bottom: 1px solid #c1c1c1; }
@@ -1057,11 +1057,6 @@ nav[role="navigation"] {
         background-color: #878787;
         color: white; }
   .most-read > div {
-    position: absolute;
-    top: 2.3em;
-    left: 0;
-    right: 0;
-    z-index: 5;
     padding: .3em;
     background-color: #878787;
     -webkit-border-radius: 0 0 3px 3px;
@@ -1069,6 +1064,15 @@ nav[role="navigation"] {
     -ms-border-radius: 0 0 3px 3px;
     -o-border-radius: 0 0 3px 3px;
     border-radius: 0 0 3px 3px; }
+    .most-read > div + div {
+      margin-top: 10px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      border-radius: 3px; }
+      .most-read > div + div h3 {
+        margin: -.3em -.3em .3em -.3em; }
   .most-read ul.wpp-list li {
     border-bottom: 1px solid #333333;
     border-top: 1px solid #c1c1c1;

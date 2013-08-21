@@ -1,4 +1,4 @@
-/*! Sonoma Index Tribune - v0.1.0 - 2013-08-15
+/*! Sonoma Index Tribune - v0.1.0 - 2013-08-20
  * http://www.sonomanews.com
  * Copyright (c) 2013; * Licensed GPLv2+ */
 ( function( window, undefined ) {
@@ -38,20 +38,6 @@ jQuery(document).ready(function($) {
 	$('.full-swipe-nav.full-nav-right').click(function() {
 		mySwiperfull.swipeNext();
 	});
-});
-
-jQuery('.most-read .nav span').bind("click", function($) {
-	if(!$(this).hasClass('active')) {
-		$('.most-read .active').removeClass('active');
-		$(this).addClass('active');
-		if($(this).hasClass('today')) {
-			$('.most-read div:first-child').css('z-index', '5');
-			$('.most-read div:first-child + div').css('z-index', '0');
-		} else {
-			$('.most-read div:first-child').css('z-index', '0');
-			$('.most-read div:first-child + div').css('z-index', '5');
-		}
-	}
 });
 
 jQuery('[data-icon="P"]').bind("click", function(e) {
