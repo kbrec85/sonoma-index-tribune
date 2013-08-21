@@ -8,7 +8,9 @@
 $title_link = str_replace(' ', '%20', get_the_title());
 $the_uri = get_permalink();
 $feat_uri = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-$desc = str_replace(' ', '%20', get_the_excerpt());
+$exc = get_the_excerpt();
+$exc2 = substr($exc, 0, 50);
+$desc = str_replace(' ', '%20', $exc2);
 $cust_author = get_post_meta( get_the_ID(), '_sit__author_overwrite', true );
 $cust_byline = get_post_meta( get_the_ID(), '_sit__byline', true );
 ?>
