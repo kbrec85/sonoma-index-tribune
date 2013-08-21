@@ -507,3 +507,12 @@ article {
 		display: block !important;
 	}
 }
+.stay-connected li {
+  float: left;
+  text-align: center;
+  width: 50%;
+  & a {
+    font-size: 2.9em;
+    line-height: 1.9em;
+  }
+}

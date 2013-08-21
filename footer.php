@@ -12,7 +12,7 @@
       <script type="text/javascript">yld_mgr.place_ad_here("ad728x90pos2");</script>
 </div>
 <footer class="site-footer">
-	<img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/the-sonoma-index-tribune.jpg" width="357" height="31" />
+	<img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/the-sonoma-index-tribune.png" width="357" height="31" />
 	<div class="col">
 		<h3>Find it Fast</h3>
 		<nav>
@@ -20,20 +20,23 @@
 		</nav>
 	</div>
 	<div class="col">
-		<nav>
-			<ul>
-				<li><a href="#nowhere" title="Lorum ipsum dolor sit amet">Lorem</a></li>
-				<li><a href="#nowhere" title="Aliquam tincidunt mauris eu risus">Aliquam</a></li>
-				<li><a href="#nowhere" title="Morbi in sem quis dui placerat ornare">Morbi</a></li>
-				<li><a href="#nowhere" title="Praesent dapibus, neque id cursus faucibus">Praesent</a></li>
-				<li><a href="#nowhere" title="Pellentesque fermentum dolor">Pellentesque</a></li>
-				<li><a href="#nowhere" title="Lorum ipsum dolor sit amet">Lorem</a></li>
-				<li><a href="#nowhere" title="Aliquam tincidunt mauris eu risus">Aliquam</a></li>
-				<li><a href="#nowhere" title="Morbi in sem quis dui placerat ornare">Morbi</a></li>
-				<li><a href="#nowhere" title="Praesent dapibus, neque id cursus faucibus">Praesent</a></li>
-				<li><a href="#nowhere" title="Pellentesque fermentum dolor">Pellentesque</a></li>
-			</ul>
-		</nav>
+	  <h3>Stay Connected</h3>
+    <nav>
+      <ul class="stay-connected">
+        <li>
+          <a href="http://www.facebook.com/#!/pages/Sonoma-Index-Tribune/359127235040" aria-hidden="true" data-icon="f" target="_blank"></a>
+        </li>
+        <li>
+          <a href="http://twitter.com/#!/sonomanews" aria-hidden="true" data-icon="t" target="_blank"></a>
+        </li>
+        <li>
+          <a href="http://www.youtube.com/user/sonomanewsvideo" aria-hidden="true" data-icon="y" target="_blank"></a>
+        </li>
+        <li>
+          <a href="http://www.verican.us/cod6/subscribe.do?catalog=sonoma&edit=true" aria-hidden="true" data-icon="m" target="_blank"></a>
+        </li>
+      </ul>
+    </nav>
 	</div>
 	<div class="col">
 		<h3>Contact &amp; Help</h3>

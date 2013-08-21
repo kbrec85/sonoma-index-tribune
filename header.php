@@ -14,6 +14,8 @@
 <head>
 <meta charset="UTF-8" />
 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,700' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" type="image/x-icon">
+<link rel="icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" type="image/x-icon">
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <?php wp_head();?>
   <script type="text/javascript">
@@ -84,7 +86,7 @@
 <body>
 <div class="wrapper">
 <header role="banner">
-	<div id="leader_pos1" class="ad ad-leader">
+	<div class="ad ad-leader">
 		<script>yld_mgr.place_ad_here("ad728x90pos1");</script>
 	</div>
 	<nav class="top-nav">
