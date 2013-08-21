@@ -69,6 +69,17 @@
       yld_mgr.slots.ad234x60pos2.cstm_content_cat_list=[""] ; 
     </script>  
     <script type="text/javascript" src="http://e.yieldmanager.net/script.js"></script>
+<!-- Put the following javascript before the closing </head> tag. -->
+  
+<script>
+  (function() {
+    var cx = '013144519715863492352:oazz1fn69hy';
+    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
 </head>
 <body>
 <div class="wrapper">

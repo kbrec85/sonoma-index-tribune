@@ -1,6 +1,6 @@
 <?php
 /**
- * Search Results Template
+ * Template Name: Search Template
  *
  * @package Sonoma Index Tribune
  * @since 0.1.0

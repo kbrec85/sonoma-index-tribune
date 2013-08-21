@@ -261,7 +261,6 @@ nav[role="navigation"] {
 	text-align: left;
 	position: relative;
 	margin: 10px 0;
-	height: 220px;
 	padding: 10px 0;
 	border: {
 		top: 1px solid $border-color;
@@ -295,14 +294,16 @@ nav[role="navigation"] {
 		}
 	}
 	> div {
-		position: absolute;
-		top: 2.3em;
-		left: 0;
-		right: 0;
-		z-index: 5;
 		padding: .3em;
 		background-color: shade($border-color, 30%);
 		@include border-radius(0 0 3px 3px);
+		+ div {
+			margin-top: 10px;
+			@include border-radius(3px);
+			h3 {
+				margin: -.3em -.3em .3em -.3em;
+			}
+		}
 	}
 	ul.wpp-list {
 		@extend %no-list;

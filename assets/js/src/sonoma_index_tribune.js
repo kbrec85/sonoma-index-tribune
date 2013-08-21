@@ -45,20 +45,6 @@ jQuery(document).ready(function($) {
 	});
 });
 
-jQuery('.most-read .nav span').bind("click", function($) {
-	if(!$(this).hasClass('active')) {
-		$('.most-read .active').removeClass('active');
-		$(this).addClass('active');
-		if($(this).hasClass('today')) {
-			$('.most-read div:first-child').css('z-index', '5');
-			$('.most-read div:first-child + div').css('z-index', '0');
-		} else {
-			$('.most-read div:first-child').css('z-index', '0');
-			$('.most-read div:first-child + div').css('z-index', '5');
-		}
-	}
-});
-
 jQuery('[data-icon="P"]').bind("click", function(e) {
 	e.preventDefault();
 	window.print();

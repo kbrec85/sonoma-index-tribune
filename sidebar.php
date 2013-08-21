@@ -7,11 +7,9 @@
  */
 ?>
 <aside class="col-2">
-	<time><?php echo date('j, F, Y g:i A');?></time>
-	<form role="search" action="/" method="get">
-		<input type="text" value="" name="s" id="s" />
-        <input type="submit" id="searchsubmit" value="Search" />
-	</form>
+	<time><?php echo date('F, j, Y g:i A');?></time>
+<!-- Place this tag where you want the search box to render -->
+<gcse:searchbox-only></gcse:searchbox-only>
 	<div class="weather">
 		<?php if ( dynamic_sidebar('sidebar-top') ) : else : endif;	?>
 	</div>
@@ -20,7 +18,7 @@
 	</div>
 	<div class="most-read">
 		<h3>Most Read Stories</h3>
-		<p class="nav"><span class="active today">Today</span><span class="week">This Week</span></p>
+		<!--<p class="nav"><span class="active today">Today</span><span class="week">This Week</span></p>-->
 		<?php if ( dynamic_sidebar('popular-posts') ) : else : endif;	?>
 	</div>
 	<div class="ad">

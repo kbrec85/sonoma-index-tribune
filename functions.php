@@ -99,12 +99,9 @@ function _sit__register_menus() {
 }
 add_action( 'init', '_sit__register_menus' );
 function _sit__replace_excerpt($content) {
-	   return str_replace('[...]',
-			   '<div class="more-link"><a href="'. get_permalink() .'">Continue Reading</a></div>',
-			   $content
-	   );
-}
-add_filter('the_excerpt', '_sit__replace_excerpt');
+	   return '&hellip; <a href="'. get_permalink() .'" class="read-more">Continue Reading >></a>';
+	}
+add_filter('excerpt_more', '_sit__replace_excerpt');
 
 //1. Add a new form element...
 add_action('register_form','_sit__register_form');

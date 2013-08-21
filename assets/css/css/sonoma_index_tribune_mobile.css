@@ -73,7 +73,7 @@ audio:not([controls]) {
  *    `em` units.
  */
 html {
-  font-family: Georiga, "Times New Roman", Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   /* 1 */
   font-size: 100%;
   /* 3 */
@@ -90,7 +90,7 @@ button,
 input,
 select,
 textarea {
-  font-family: Georiga, "Times New Roman", Times, serif; }
+  font-family: Georgia, "Times New Roman", Times, serif; }
 
 /**
  * Remove default margin.
