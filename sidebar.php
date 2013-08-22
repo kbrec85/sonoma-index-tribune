@@ -7,7 +7,7 @@
  */
 ?>
 <aside class="col-2">
-	<time><?php echo date('F, j, Y g:i A');?></time>
+	<time><?php echo date('F j, Y g:i A');?></time>
 <!-- Place this tag where you want the search box to render -->
 <gcse:searchbox-only></gcse:searchbox-only>
 	<div class="weather">
