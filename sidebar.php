@@ -6,6 +6,10 @@
  * @since 0.1.0
  */
 ?>
+<?php
+  //set local date/time  - SW
+  date_default_timezone_set('America/Los_Angeles');
+?>
 <aside class="col-2">
 	<time><?php echo date('F j, Y g:i A');?></time>
 <!-- Place this tag where you want the search box to render -->
