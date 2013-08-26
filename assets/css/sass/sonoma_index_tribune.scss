@@ -307,7 +307,7 @@ nav[role="navigation"] {
 	}
 	> div {
 		padding: .3em;
-		background-color: shade($border-color, 30%);
+		background-color: #AFAFAF;
 		@include border-radius(0 0 3px 3px);
 		+ div {
 			margin-top: 10px;
@@ -321,7 +321,7 @@ nav[role="navigation"] {
 		@extend %no-list;
 		li {
 			@extend %no-list;
-			border-bottom: 1px solid $text-grey;
+			border-bottom: 1px solid #5E5E60;
 			border-top: 1px solid $border-color;
 			overflow: none;
 			padding: .3em;

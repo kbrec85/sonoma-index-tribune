@@ -1071,7 +1071,7 @@ nav[role="navigation"] {
         color: white; }
   .most-read > div {
     padding: .3em;
-    background-color: #878787;
+    background-color: #AFAFAF;
     -webkit-border-radius: 0 0 3px 3px;
     -moz-border-radius: 0 0 3px 3px;
     -ms-border-radius: 0 0 3px 3px;
@@ -1087,7 +1087,7 @@ nav[role="navigation"] {
       .most-read > div + div h3 {
         margin: -.3em -.3em .3em -.3em; }
   .most-read ul.wpp-list li {
-    border-bottom: 1px solid #333333;
+    border-bottom: 1px solid #5E5E60;
     border-top: 1px solid #c1c1c1;
     overflow: none;
     padding: .3em; }
