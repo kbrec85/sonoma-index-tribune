@@ -170,7 +170,7 @@ nav[role="navigation"] {
 		width:50%;
 		padding: 10px 20px 15px;
 		border-bottom: 1px solid $border-color;
-		height: 300px;
+		height: 250px;
 		overflow: hidden;
 		position: relative;
 		&:nth-child(even) {
@@ -222,15 +222,27 @@ nav[role="navigation"] {
 	text-align: right;
 }
 .north-bay-headlines {
-	background-color: #f3f3f5;
+	background-color: #e4e4e4;
 	padding: 10px;
+	font-family:$sans;
 	ul {
 		@extend %no-list;
 	}
 	li {
 		@extend %no-list;
-		margin-bottom: 10px;
+		padding:10px 0;
+		border-bottom:1px solid #d3d3d3;
+		border-top:1px solid #fff;
 	}
+	li:first-child{
+	  border-top:none;
+	}
+	li:last-child{
+	  border-bottom:none;
+	}
+}
+.really_simple_twitter_widget li a{
+  font-size:0.7em;
 }
 .col-2 {
 	@include inline-block;

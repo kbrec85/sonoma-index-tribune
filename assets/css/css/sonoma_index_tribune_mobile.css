@@ -571,7 +571,7 @@ table {
   color: #FF3333; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto Condensed", sans-serif; }
 
 a {
   text-decoration: none;
@@ -629,7 +629,7 @@ nav[role="navigation"] {
     color: white;
     font-size: 1.3em;
     line-height: 2em;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     border-bottom: 1px solid #c1c1c1;
     padding: 0 5%; }
     nav[role="navigation"] a:hover, nav[role="navigation"] a:active {
@@ -687,7 +687,7 @@ main img {
   margin: 0 auto; }
 main time {
   margin-top: 10px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-style: italic;
   font-size: .8em;
   text-align: right; }
