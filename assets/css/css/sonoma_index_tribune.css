@@ -1162,7 +1162,7 @@ nav[role="navigation"] {
     margin-left: auto;
     margin-right: auto; }
     .top [itemprop="articleBody"] p:last-child {
-      margin-bottom: 0px; }
+      margin-bottom: 30px; }
 
 .sections > article {
   padding: .5em 0;
