@@ -19,7 +19,22 @@
 	<h1 class="archive-title"><?php if(is_author()){
 			$curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));
 			echo $curauth->display_name."'s Articles";
-			} else { printf( __( '%s', 'sit' ), single_cat_title( '', false ));} ?></h1>
+			} else { printf( __( '%s', 'sit' ), single_cat_title( '', false ));} ?>
+	    <?php 
+	    $curCat = single_cat_title('',false);
+      $curCatID = get_cat_ID($curCat);
+      $subCats = get_categories('parent='.$curCatID);
+      if($subCats){ ?>
+        <span class="sub-cats">
+          Related:&nbsp;
+        <?php
+        foreach($subCats as $subs){ ?>
+          <a href="<?php echo get_category_link($subs->term_id); ?>"><?php echo $subs->name; ?></a>
+      <?php    }// end for ?>
+        </span>
+      <?php } //end if subCats    
+      ?>
+	</h1>
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
 	if (has_post_thumbnail()) {
 		$featID = get_the_ID();

@@ -528,3 +528,11 @@ article {
     line-height: 1.9em;
   }
 }
+.sub-cats{
+  float:right;
+  font-size:0.6em;
+  & a{
+    color:lighten($text-grey, 30%);    
+    font-weight:400;
+  }
+}

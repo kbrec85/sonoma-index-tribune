@@ -92,7 +92,7 @@
 	<nav class="top-nav">
 		<?php echo strip_tags(wp_nav_menu(array('theme_location' => 'top-menu', 'items_wrap' => '%3$s', 'container' => '','echo' => false, 'depth' => 0) ), '<a>'); ?>
 	</nav>
-	<img class="magcover" src="<?php echo get_stylesheet_directory_uri(); ?>/images/sonoma-cover.jpg" width="92" height="117" border="0"/>
+	<a href="http://santarosapressdemocrat.ca.newsmemory.com/special.php?date=20130625" target="_blank"><img class="magcover" src="<?php echo get_stylesheet_directory_uri(); ?>/images/sonoma-cover.jpg" width="92" height="117" border="0"/></a>
 	<a href="/"><img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/the-sonoma-index-tribune.jpg" width="900" height="75" /></a>
 	<nav role="navigation">
 		<?php echo strip_tags(wp_nav_menu(array('theme_location' => 'main-menu', 'items_wrap' => '%3$s', 'container' => '','echo' => false, 'depth' => 0) ), '<a>'); ?>

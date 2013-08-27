@@ -1279,3 +1279,10 @@ article {
   .stay-connected li a {
     font-size: 2.9em;
     line-height: 1.9em; }
+
+.sub-cats {
+  float: right;
+  font-size: 0.6em; }
+  .sub-cats a {
+    color: gray;
+    font-weight: 400; }
