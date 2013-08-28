@@ -28,9 +28,15 @@
         <span class="sub-cats">
           Related:&nbsp;
         <?php
-        foreach($subCats as $subs){ ?>
-          <a href="<?php echo get_category_link($subs->term_id); ?>"><?php echo $subs->name; ?></a>
-      <?php    }// end for ?>
+        $count = count($subCats);
+        $i = 0;
+        foreach($subCats as $subs){ 
+          $i++;
+          ?>          
+          <a href="<?php echo get_category_link($subs->term_id); ?>"><?php echo $subs->name; ?></a>         
+      <?php   
+          if($i != $count) echo '|';
+       }// end for ?>
         </span>
       <?php } //end if subCats    
       ?>
