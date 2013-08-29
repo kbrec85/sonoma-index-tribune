@@ -49,3 +49,21 @@ jQuery('[data-icon="P"]').bind("click", function(e) {
 	e.preventDefault();
 	window.print();
 });
+/*OUTBRAIN */
+var sonoma= {
+    outbrain: function(){
+        alert('test');
+        var OB_permalink = 'http://' + document.location.hostname + document.location.pathname,
+            OB_langJS = 'http://widgets.outbrain.com/lang_en.js',
+            OB_Template = "nytrmg",
+            OB_Script;
+        OB_widgetId = 'AR_1';
+        if (typeof (OB_Script) !== 'undefined') {
+            OutbrainStart();
+        } else {
+            OB_Script = true;
+            OB_Str = "<div id='ob_widget'><script src='http://widgets.outbrain.com/outbrainWidget.js' type='text/javascript'></" + "script></div>";
+                document.write(OB_Str);
+            } 
+    }    
+}

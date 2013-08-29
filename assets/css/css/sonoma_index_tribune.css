@@ -1286,3 +1286,22 @@ article {
   .sub-cats a {
     color: gray;
     font-weight: 400; }
+
+.network-sites {
+  background: none repeat scroll 0 0 #E4E4E4;
+  border-radius: 4px 4px 4px 4px;
+  margin: 10px 0;
+  padding: 5px 0 0; }
+  .network-sites h4 {
+    margin: 0 0 10px 10px; }
+  .network-sites a {
+    background: url("http://img.pressdemocrat.com/network-logos.jpg") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 55px;
+    margin-bottom: 5px; }
+  .network-sites a.p360-logo {
+    background-position: 0 -55px; }
+  .network-sites a.nbbj-logo {
+    background-position: 0 0; }
+  .network-sites a.pd-logo {
+    background-position: 0 -167px; }

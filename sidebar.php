@@ -28,5 +28,10 @@
 	<div class="ad">
 		<script>yld_mgr.place_ad_here("ad300x600pos1");</script>
 	</div>
-	<img src="http://placekitten.com/300/112" width="300" height="112" />
+	<div class="network-sites">
+      <h4>Our Network</h4>
+      <a class="pd-logo" href="http://www.pressdemocrat.com/"></a>
+      <a class="p360-logo" href="http://www.petaluma360.com/"></a>
+      <a class="nbbj-logo" href="http://www.northbaybusinessjournal.com/"></a>
+  </div>
 </aside>

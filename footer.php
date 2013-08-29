@@ -65,5 +65,10 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
+<script type="text/javascript">
+window._taboola = window._taboola || [];
+window._taboola.push({article: "auto"});
+</script>
+<script type="text/javascript" src="http://cdn.taboolasyndication.com/libtrc/nytrng-pressdemocrat/loader.js"></script>
 </body>
 </html>
