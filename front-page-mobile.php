@@ -24,7 +24,7 @@
 	</article>
 	<ul class="article-list">
 		<?php
-				$query = new WP_Query('posts_per_page=9');
+				$query = new WP_Query('cat=17&posts_per_page=9');
 				if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();
 				if (get_the_ID() != $featured_id) {
 			?>
