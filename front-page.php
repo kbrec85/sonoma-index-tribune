@@ -71,7 +71,7 @@
 	<section>
 		<div class="sections">
 			<div class="box">
-				<a href="#"><h3>Sports</h3></a>
+				<a href="<?php echo esc_url(get_category_link( 2 )); ?>"><h3>Sports</h3></a>
 				<?php $query = new WP_Query('cat=2&posts_per_page=1');
 				if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();?>
 				<a href="<?php the_permalink();?>">
@@ -85,7 +85,7 @@
 				<?php the_excerpt(); endwhile; endif; ?>
 			</div><!--
 			--><div class="box">
-				<a href="#"><h3>Food &amp; Wine</h3></a>
+				<a href="<?php echo esc_url(get_category_link( 4 )); ?>"><h3>Food &amp; Wine</h3></a>
 				<?php $query = new WP_Query('cat=4&posts_per_page=1');
 				if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();?>
 				<a href="<?php the_permalink();?>">
@@ -99,7 +99,7 @@
 				<?php the_excerpt(); endwhile; endif; ?>
 			</div><!--
 			--><div class="box">
-				<a href="#"><h3>Entertainment</h3></a>
+				<a href="<?php echo esc_url(get_category_link( 5 )); ?>"><h3>Entertainment</h3></a>
 				<?php $query = new WP_Query('cat=5&posts_per_page=1');
 				if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();?>
 				<a href="<?php the_permalink();?>">
@@ -113,7 +113,7 @@
 				<?php the_excerpt(); endwhile; endif; ?>
 			</div><!--
 			--><div class="box">
-				<a href="#"><h3>Opinion</h3></a>
+				<a href="<?php echo esc_url(get_category_link( 8 )); ?>"><h3>Opinion</h3></a>
 				<?php $query = new WP_Query('cat=8&posts_per_page=1');
 				if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();?>
 				<a href="<?php the_permalink();?>">
