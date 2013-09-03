@@ -21,7 +21,9 @@
 </head>
 
 <div class="wrapper">
-<img class="ad" src="http://placekitten.com/308/55" />
+  <!-- insert ad below
+    <img class="ad" src="http://placekitten.com/308/55" />
+  -->
 <header role="banner">
 	<a href="/"><img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/the-sonoma-index-tribune.jpg" /></a>
 	<label for="toggle-nav"></label>

@@ -143,8 +143,8 @@ ul.article-list {
 	}
 }
 .box {
-	width:80%;
-	padding: 10px 20px;
+	//width:80%;
+	//padding: 10px 20px; removing padding and width in favor of full expand of .box
 	border-bottom: 1px solid $border-color;
 	//max-height: 400px;
 	//overflow: hidden;

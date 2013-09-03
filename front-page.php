@@ -8,10 +8,10 @@
  $tempdir = get_template_directory();
  require_once ($tempdir.'/includes/mobile_detect.php');
  $browser = new Mobile_Detect();
- if($browser->isMobile()){
- 	include($tempdir.'/header_mobile.php');
- 	include($tempdir.'/front-page-mobile.php');
- 	include($tempdir.'/footer-mobile.php');
+ if(($browser->isMobile())&&!($browser->isTablet())){
+  include($tempdir.'/header_mobile.php');
+  include($tempdir.'/front-page-mobile.php');
+  include($tempdir.'/footer-mobile.php');
  } else {
  	get_header();
  ?>
@@ -82,7 +82,7 @@
 					}
 				?>
 				<h4><?php the_title(); ?></h4></a>
-				<?php the_excerpt(); endwhile; endif; ?>
+				<?php endwhile; endif; ?>
 			</div><!--
 			--><div class="box">
 				<a href="<?php echo esc_url(get_category_link( 4 )); ?>"><h3>Food &amp; Wine</h3></a>
@@ -96,7 +96,7 @@
 					}
 				?>
 				<h4><?php the_title(); ?></h4></a>
-				<?php the_excerpt(); endwhile; endif; ?>
+				<?php endwhile; endif; ?>
 			</div><!--
 			--><div class="box">
 				<a href="<?php echo esc_url(get_category_link( 5 )); ?>"><h3>Entertainment</h3></a>
@@ -110,7 +110,7 @@
 					}
 				?>
 				<h4><?php the_title(); ?></h4></a>
-				<?php the_excerpt(); endwhile; endif; ?>
+				<?php endwhile; endif; ?>
 			</div><!--
 			--><div class="box">
 				<a href="<?php echo esc_url(get_category_link( 8 )); ?>"><h3>Opinion</h3></a>
@@ -124,7 +124,7 @@
 					}
 				?>
 				<h4><?php the_title(); ?></h4></a>
-				<?php the_excerpt(); endwhile; endif; ?>
+				<?php endwhile; endif; ?>
 			</div>
 			<h4>Headlines from around the North Bay</h4>
 			<?php if ( dynamic_sidebar('around-the-bay') ) : else : endif;	?>

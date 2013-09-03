@@ -32,7 +32,9 @@
 			<?php } endwhile; endif; ?>
 	</ul>
 </main>
-<img class="ad" src="http://placekitten.com/308/55" />
+<!-- insert ad code here
+  <img class="ad" src="http://placekitten.com/308/55" />
+-->
 <section class="sections">
 	<div class="box">
 				<a href="#"><h3>Sports</h3></a>

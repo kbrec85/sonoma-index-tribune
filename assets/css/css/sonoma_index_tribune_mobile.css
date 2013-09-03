@@ -707,8 +707,6 @@ ul.article-list {
     color: #333333; }
 
 .box {
-  width: 80%;
-  padding: 10px 20px;
   border-bottom: 1px solid #c1c1c1;
   position: relative;
   margin: 10px auto;
