@@ -53,7 +53,7 @@
 </footer>
 <?php
   if($_SESSION['view']=='desktop'){ ?>
-    <p><a href="<?php echo get_site_url(); ?>/wp-content/themes/sonoma-index-tribune/assets/switch.php?mobile" class="mobile-switch">Switch to Mobile</a></p> 
+  <a href="<?php echo get_site_url(); ?>/wp-content/themes/sonoma-index-tribune/assets/switch.php?mobile" class="mobile-switch">Switch to Mobile</a> 
 <?php  } 
 ?>
 <p class="footer-copyright">copyright <?php echo date(Y);?> The Sonoma Index Tribune | <?php echo strip_tags(wp_nav_menu(array('theme_location' => 'footer-menu', 'items_wrap' => '%3$s', 'container' => '','echo' => false, 'depth' => 0) ), '<a>'); ?></p>
