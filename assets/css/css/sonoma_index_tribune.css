@@ -1238,7 +1238,8 @@ article {
     vertical-align: top;
     margin-left: .1em; }
   article h4 {
-    border: 0px; }
+    border: 0px;
+    max-width: 60%; }
   article .authorpic {
     width: 10%;
     float: left;
