@@ -5,11 +5,11 @@
  * @package Sonoma Index Tribune
  * @since 0.1.0
  */
- 
+ session_start();
  $tempdir = get_template_directory();
  require_once ($tempdir.'/includes/mobile_detect.php');
  $browser = new Mobile_Detect();
- if($browser->isMobile()){
+ if(($browser->isMobile())&&!($browser->isTablet())&&!($_SESSION['view']=='desktop')){
  	include($tempdir.'/header_mobile.php');
  	include($tempdir.'/article-mobile.php');
  	include($tempdir.'/footer-mobile.php');
